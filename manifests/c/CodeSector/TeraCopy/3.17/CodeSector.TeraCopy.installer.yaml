@@ -1,17 +1,17 @@
-# Created with YamlCreate.ps1 v2.4.1 $debug=AUSU.CRLF.7-4-3.Win32NT
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: CodeSector.TeraCopy
-PackageVersion: "3.17"
-InstallerType: exe # Advanced Installer
+PackageVersion: '3.17'
+InstallerType: exe
 Scope: machine
 InstallModes:
 - interactive
 - silent
 - silentWithProgress
 InstallerSwitches:
-  Silent: /exenoui /quiet /norestart
-  SilentWithProgress: /exenoui /passive /norestart
+  Silent: /exenoupdates /exenoui /quiet /norestart
+  SilentWithProgress: /exenoupdates /passive /norestart
   InstallLocation: APPDIR="<INSTALLPATH>"
   Log: /log "<LOGPATH>"
 ExpectedReturnCodes:
@@ -39,10 +39,10 @@ ExpectedReturnCodes:
   ReturnResponse: alreadyInstalled
 - InstallerReturnCode: 1639
   ReturnResponse: invalidParameter
-- InstallerReturnCode: 1641
-  ReturnResponse: rebootInitiated
 - InstallerReturnCode: 1640
   ReturnResponse: blockedByPolicy
+- InstallerReturnCode: 1641
+  ReturnResponse: rebootInitiated
 - InstallerReturnCode: 1643
   ReturnResponse: blockedByPolicy
 - InstallerReturnCode: 1644
@@ -81,6 +81,7 @@ FileExtensions:
 - xxh3
 - xxh32
 - xxh64
+ProductCode: '{DF5325DF-1F43-4282-85D5-1CA3353E6B13}'
 ReleaseDate: 2023-12-03
 AppsAndFeaturesEntries:
 - ProductCode: '{DF5325DF-1F43-4282-85D5-1CA3353E6B13}'
@@ -90,10 +91,8 @@ Installers:
 - Architecture: x86
   InstallerUrl: https://codesector.com/files/teracopy3.17.exe
   InstallerSha256: AC03DB52BB68A013D3A8BF4DB703EC11976FA1D0AA557EB988E3F926A26656CF
-  ProductCode: '{DF5325DF-1F43-4282-85D5-1CA3353E6B13}'
 - Architecture: x64
   InstallerUrl: https://codesector.com/files/teracopy3.17.exe
   InstallerSha256: AC03DB52BB68A013D3A8BF4DB703EC11976FA1D0AA557EB988E3F926A26656CF
-  ProductCode: '{DF5325DF-1F43-4282-85D5-1CA3353E6B13}'
 ManifestType: installer
-ManifestVersion: 1.6.0
+ManifestVersion: 1.12.0

@@ -1,6 +1,6 @@
-# Created with YamlCreate.ps1 v2.4.1 Dumplings Mod $debug=QUSU.CRLF.7-4-2.Win32NT
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
-##
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
 PackageIdentifier: Hitencent.JisuPDFEditor
 PackageVersion: "3.0"
 InstallerType: nullsoft
@@ -8,11 +8,11 @@ Scope: machine
 UpgradeBehavior: install
 FileExtensions:
 - pdf
-ReleaseDate: 2024-04-25
+ProductCode: 极速PDF编辑器
+ReleaseDate: 2026-01-05
 Installers:
 - Architecture: x86
-  InstallerUrl: https://dl.jisupdfeditor.com/jisupdfeditor_setup_3.0.5.8.exe
-  InstallerSha256: 43DDBA4E019B2942378FE1CD88900A2EF8AD15800F6FFE89DA111D821B934B28
-  ProductCode: 极速PDF编辑器
+  InstallerUrl: https://dl.jisupdfeditor.com/jisupdfeditor_setup_3.0.6.9.exe
+  InstallerSha256: FCEF8609069E79B2DF0AE8C72EC8CC56BD1C2B5CECAEC2C28CF36E7A48971979
 ManifestType: installer
-ManifestVersion: 1.6.0
+ManifestVersion: 1.12.0
